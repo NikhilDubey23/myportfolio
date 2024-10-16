@@ -1,0 +1,367 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+
+<body class="font-nunito">
+    <!-- intro -->
+    <div
+        class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden">
+        <nav class=" w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
+            <div class="container mx-auto flex  items-center justify-between py-5">
+                <div class="flex items-center gap-2">
+                    <img class="w-8 rounded-full bg-black transition-transform hover:scale-125 duration-700 "
+                        src="home4.png" alt:="">
+                    <span class="text-2xl font-bold dark:text-white ">Home</span>
+                </div>
+                <ul class="hidden md:flex space-x-10 text-grey-600 dark:text-gray-100 font-bold text-sm uppercase">
+                    <li class="hover:text-gray-500">
+                        <a href="#">home</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#about">about me</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#plateforms">plateforms</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#works">works</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#contact">contact</a>
+                        <span class="text-2xl font-bold dark"></span>
+                    </li>
+                </ul>
+
+                <!-- <button><img id="moonIcon" class=" hidden md:block w-5 cursor-pointer" src="moon.png" alt=""></button> -->
+                <img  src="moon.png" class=" moon hidden md:block w-5 cursor-pointer" alt="">
+                <div id="hamburger" class=" space-y-1 md:hidden cursor-pointer z-20">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+                <ul id="menu"
+                    class=" hidden bg-black absolute right-0 top-0 w-1/5 p-10 rounded-b-2xl space-y-1 text-white text-center duration-700 transition-transform ">
+                    <li>
+                        <a class=" mx-auto" id="hLink" href="#"> <img
+                                class="mx-auto  hover:scale-125 transition-transform decoration-blue-700 duration-700"
+                                src="home4.png" alt="">home</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#about"><img
+                                class="mx-auto  hover:scale-125 transition-transform decoration-blue-700 duration-700"
+                                src="aboutme.png" alt="">about me</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#plateforms"><img
+                                class="mx-auto  hover:scale-125 transition-transform decoration-blue-700 duration-700 "
+                                src="code.png" alt="">plateforms</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#works"><img
+                                class="mx-auto  hover:scale-125 transition-transform decoration-blue-700 duration-700"
+                                src="workmenu.png" alt="">works</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#contact"><img
+                                class="mx-auto  hover:scale-125 transition-transform decoration-blue-700 duration-700"
+                                src="contactmenu.png" alt="">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- intro content -->
+        <!-- image -->
+        <img class="absolute bottom-0 right-0  h-5/6 lg:left-0 mx-auto object-cover" src="file.png" alt="">
+        <!-- circle -->
+        <div
+            class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-[550] h-[550] bg-indigo-900 rounded-full -z-10">
+        </div>
+        <!-- animated text -->
+        <div
+            class="absolute top-1/3 left-7 text-3xl sm:left-5 sm:text-7xl md:left-1/4 md:text-43xl lg:left-5 xl:left-48 xl:text-7xl font-bold">
+            <span class="text-gray-500">Freelancer</span>
+            <p id="text" class="text-red-950"></p>
+
+        </div>
+        <!-- text -->
+        <div
+            class="hidden lg:flex flex-col gap-5 rounded-md absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900  p-6 shadow-lg shadow-fuchsia-200 h-fit w-1/3">
+            <h1 class="text-4xl font-bold text-indigo-900">Hii,I'm Nikhil</h1>
+            <p class="text-gray-400">" A passionate full-stack web developer & Design with a strong background in
+                building
+                responsive and scalable web applications."
+            </p>
+            <a class="bg-indigo-600 text-white text-xl px-3 py-2 w-fit rounded-md font-semibold hover:bg-green-600  transition-transform hover:scale-125 duration-700"
+                href="#contact"> Hire
+                Me</a>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about" class="px-10 dark:bg-slate-900">
+        <div class="container mx-auto py-40  flex-col-reverse lg:flex-row items-center gap-20 flex">
+            <!-- left -->
+            <div class="relative">
+                <img class=" h-1/4 top-0 left-0 absolute -z-10" src="dots.png" alt="">
+                <div class=" w-80 h-2/5  overflow-hidden ">
+                    <img src="picture2.png" alt="">
+                </div>
+            </div>
+            <!-- right -->
+            <div class="my-auto flex flex-col gap-3 ">
+                <h1 class="text-indigo-600 font-bold">ABOUT ME</h1>
+                <img class="w-10 bg-black hover:scale-125 transition-transform duration-700 rounded-full"
+                    src="aboutme.png" alt="">
+                <h1 class="text-3xl font-medium dark:text-white">Better Design</h1>
+                <h1 class="text-3xl font-medium dark:text-white">Better Experience</h1>
+                <p class="text-gray-400">
+                    I specialize in both frontend technologies like HTML, CSS, JavaScript, and modern frameworks such as
+                    React/Angular, <br> as well as backend development using
+                    Node.js, Express, and databases like MongoDB and MySQL.
+                </p>
+                <h2 class="text-gray-400 font-medium gap-3">C++</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-3/4 bg-indigo-600 h-1.5 rounded-md"></div>
+                </div>
+                <h2 class="text-gray-400 font-medium ">HTML</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+                </div>
+                <h2 class="text-gray-400 font-medium">JAVASCRIPT</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-4/5 bg-indigo-600 h-1.5 rounded-md"></div>
+                </div>
+                <h2 class="text-gray-400 font-medium">CSS</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+                </div>
+                <h2 class="text-gray-400 font-medium">REACT</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-3/4 bg-indigo-600 h-1.5 rounded-md"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- plateforms -->
+    <div id="plateforms" class="py-40 dark:bg-slate-900">
+        <div class="container mx-auto">
+            <!-- top -->
+            <div class="flex flex-col gap-3 items-center">
+                <h1 class="text-indigo-600 font-bold">PLATEFORMS</h1>
+                <img class="w-10 bg-black hover:scale-125 transition-transform duration-700 rounded-full" src="code.png"
+                    alt="">
+                <h1 class="text-3xl dark:text-white"> Online Coding Plateform</h1>
+                <p class="w-1/2 text-center text-gray-400">These are the online coding platforms help me to improve
+                    programming skills, prepare for technical interviews, and engage in competitive coding. these
+                    plateforms offer a wide variety of coding problems that focus on topics such as algorithms, data
+                    structures, dynamic programming and more.</p>
+            </div>
+            <!-- bottom -->
+            <div class="flex flex-wrap sm:p-0 justify-between p-5">
+                <!-- card -->
+                <div
+                    class="w-full md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 duration-700 transform-none transition-all hover:scale-x-110 hover:translate-x-10 items-center justify-center mx-auto  ">
+                    <img class="w-20 h-20" src="leetcode2.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Leetcode</h1>
+                    <p class="text-gray-400">LeetCode is a powerful tool for developing your programming skills, acing coding interviews, and growing as a developer..</p>
+                    <a class="text-indigo-600 font-semibold text-sm  hover:scale-125 transition-transform decoration-blue-700 duration-700"
+                        href="https://leetcode.com/u/nikhildubey23/" target="_blank">Read More</a>
+                </div>
+                <!-- card -->
+                <div
+                    class="w-full md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 duration-700 transform-none transition-all hover:scale-x-left-110 hover:translate-x-10 items-center justify-center mx-auto">
+                    <img class="w-20 h-20" src="gfglogo.jpg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">GeeksforGeeks</h1>
+                    <p class="text-gray-400">GeeksforGeeks is also a powerful tool for developing your programming skills, acing coding interviews, and growing as a developer..</p>
+                    <a class="text-indigo-600 font-semibold text-sm  hover:scale-125 transition-transform decoration-blue-700 duration-700"
+                        href="https://www.geeksforgeeks.org/user/nikhildubey2310/" target="_blank">Read More</a>
+                </div>
+                <!-- card -->
+                <div
+                    class="w-full md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 duration-700 transform-none transition-all hover:scale-x-110 hover:translate-x-10 items-center justify-center mx-auto">
+                    <img class="w-20 h-20" src="hackerranklogo.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">HackerRank</h1>
+                    <p class="text-gray-400">HackerRank is also a powerful tool for developing your programming skills, acing coding interviews, and growing as a developer..</p>
+                    <a class="text-indigo-600 font-semibold text-sm  hover:scale-125 transition-transform decoration-blue-700 duration-700"
+                        href="https://www.hackerrank.com/profile/nikhildubey2310" target="_blank">Read More</a>
+                </div>
+                <!-- card -->
+                <div
+                    class="w-full md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 duration-700 transform-none transition-all hover:scale-x-left110 hover:translate-x-10 items-center justify-center mx-auto">
+                    <img class="w-20 h-20" src="codesheflogo.jpg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">CodeShef</h1>
+                    <p class="text-gray-400">CodeShef is also a powerful tool for developing your programming skills, acing coding interviews, and growing as a developer...</p>
+                    <a class="text-indigo-600 font-semibold text-sm  hover:scale-125 transition-transform decoration-blue-700 duration-700"
+                        href="https://www.codechef.com/users/nikhildubey23" target="_blank">Read More</a>
+                </div>
+                <!-- card -->
+                <div
+                    class="w-full md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 duration-700 transform-none transition-all hover:scale-x-110 hover:translate-x-10 items-center justify-center mx-auto">
+                    <img class="w-20 h-20" src="githublogo.jpg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">GitHub</h1>
+                    <p class="text-gray-400"> GitHub is also a powerful tool for developing your programming skills, acing coding interviews, and growing as a developer..</p>
+                    <a class="text-indigo-600 font-semibold text-sm  hover:scale-125 transition-transform decoration-blue-700 duration-700"
+                        href="https://github.com/NikhilDubey23" target="_blank">Read More</a>
+                </div>
+                <!-- card -->
+                <div
+                    class="w-full md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 duration-700 transform-none transition-all hover:scale-x- left-110 hover:translate-x-10 items-center justify-center mx-auto">
+                    <img class="w-20 h-20" src="leetcode2.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Leetcode</h1>
+                    <p class="text-gray-400">is also a powerful tool for developing your programming skills, acing coding interviews, and growing as a developer..</p>
+                    <a class="text-indigo-600 font-semibold text-sm hover:scale-125 transition-transform decoration-blue-700 duration-700"
+                        href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- works-->
+    <div id="works" class=" py-40 dark:bg-slate-900">
+        <div class="container mx-auto">
+            <!-- top -->
+            <div class="flex flex-col gap-3 items-center m-1">
+                <h1 class="text-indigo-600 font-bold">PORTFOLIO</h1>
+                <img class="w-10 bg-black hover:scale-125 transition-transform duration-700 rounded-full"
+                    src="workmenu.png" alt="">
+                <h1 class="text-3xl dark:text-white">Works and Projects</h1>
+                <p class="w-1/2 text-center text-gray-400">"Here are some of the projects I’ve worked on, demonstrating
+                    my skills in full-stack development and my ability to solve real-world problems."</p>
+            </div>
+            <!-- bottom -->
+            <div class="flex flex-wrap sm:p-0 justify-between p-5 ">
+                <!-- card -->
+                <div
+                    class="w-full md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 duration-700 transform-none transition-all hover:scale-x-110 hover:translate-x-10 items-center justify-center mx-auto">
+                    <img class="w-20 h-20" src="random.jpg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Project Tittle</h1>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nesciunt.</p>
+                    <a class="text-indigo-600 font-semibold text-sm hover:scale-125 transition-transform decoration-blue-700 duration-700"
+                        href="">Read More</a>
+                </div>
+                <!-- card -->
+                <div
+                    class="w-full md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 duration-700 transform-none transition-all hover:scale-x-right-110 hover:translate-x-10 items-center justify-center mx-auto">
+                    <img class="w-20 h-20" src="random.jpg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Project Tittle</h1>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nesciunt.</p>
+                    <a class="text-indigo-600 font-semibold text-sm  hover:scale-125 transition-transform decoration-blue-700 duration-700"
+                        href="">Read More</a>
+                </div>
+                <!-- card -->
+                <div
+                    class="w-full md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 duration-700 transform-none transition-all hover:scale-x-110 hover:translate-x-10 items-center justify-center mx-auto">
+                    <img class="w-20 h-20" src="random.jpg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Project Tittle</h1>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nesciunt.</p>
+                    <a class="text-indigo-600 font-semibold text-sm  hover:scale-125 transition-transform decoration-blue-700 duration-700"
+                        href="">Read More</a>
+                </div>
+                <!-- card -->
+                <div
+                    class="w-full md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 duration-700 transform-none transition-all hover:scale-x-left-110 hover:translate-x-10 items-center justify-center mx-auto">
+                    <img class="w-20 h-20" src="random.jpg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Project Tittle</h1>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nesciunt.</p>
+                    <a class="text-indigo-600 font-semibold text-sm hover:scale-125 transition-transform decoration-blue-700 duration-700"
+                        href="">Read More</a>
+                </div>
+                <!-- card -->
+                <div
+                    class="w-full md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 duration-700 transform-none transition-all hover:scale-x-110 hover:translate-x-10 items-center justify-center mx-auto">
+                    <img class="w-20 h-20" src="random.jpg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Project Tittle</h1>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nesciunt.</p>
+                    <a class="text-indigo-600 font-semibold text-sm hover:scale-125 transition-transform decoration-blue-700 duration-700"
+                        href="">Read More</a>
+                </div>
+                <!-- card -->
+                <div
+                    class="w-full md:w-5/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 duration-700 transform-none transition-all hover:scale-x-left-125 hover:translate-x-10 items-center justify-center mx-auto">
+                    <img class="w-20 h-20" src="random.jpg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white hover:scale-0 ">Usability Hub clone</h1>
+                    <p class="text-gray-400 hover:scale-0">"Developed a responsive Usability Hub clone using HTML, CSS, and JavaScript, featuring interactive surveys, user flows, and a clean, user-friendly interface with seamless navigation and real-time feedback."</p>
+                    <a class="text-indigo-600 font-semibold text-sm hover:scale-125 transition-transform decoration-blue-700 duration-700"
+                        href="https://usebilityhub.netlify.app/" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact" class="dark:bg-slate-900">
+        <div class="container mx-auto">
+            <!-- top -->
+            <div class="flex flex-col gap-3 items-center ">
+                <h1 class="text-indigo-600 font-bold">CONTACT</h1>
+                <img class="w-10 bg-black hover:scale-125 transition-transform duration-700 rounded-full"
+                    src="contactmenu.png" alt="">
+                <h1 class="text-3xl dark:text-white">Have questions??</h1>
+                <p class="w-1/2 text-center text-gray-400">Do you have any idea? Let's discuss it and see what we can do
+                    together .</p>
+            </div>
+            <!-- bottom -->
+            <form name="myForm" onsubmit="return validateForm()" class=" contact-form mt-5 p-8 flex flex-col gap-5 items-center">
+                <input id="name"
+                    class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+                    type="text" placeholder="Name Surname ">
+                <input id="email"
+                    class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+                    type="email" placeholder="E mail">
+                <input id="subject"
+                    class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+                    type="subject" placeholder="Subject">
+                <textarea id="textarea"
+                    class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+                    cols="30" rows="10" placeholder="Message..."></textarea>
+                <input id="submit"
+                    class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md cursor-pointer hover:bg-green-600"
+                    type="button" value="SUBMIT" placeholder="SUBMIT" onclick="send()">
+                </input>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class=" w-full bg-gray-800  ">
+        <div class="container mx-auto flex items-center justify-evenly   py-5">
+            <div class="flex items-center gap-3">
+                <a href="https://drive.google.com/file/d/1F27DksP5mu61iSeyQaG1IMEtkQAvGJwA/view?usp=drivesdk" target="_blank"><img class="w-16 hover:scale-125 transition-transform duration-700" src="downloadcv.png"
+                        alt=""></a>
+                <span class="text-2xl font-bold text-white">down.CV</span>
+
+
+            </div>
+            <span class="hidden md:block font-medium text-white">© 2024 Design by Nikhil Dubey</span>
+            <div class="flex gap-10">
+
+                <a href="https://www.linkedin.com/in/nikhil-dubey-5934b424a/" target="_blank"><img
+                        class="h-10 hover:scale-125 transition-transform duration-700" src="linkedin.png" alt=""></a>
+
+                <a href="https://x.com/dubey_nikh13752" target="_blank"><img class="h-10 hover:scale-125  transition-transform duration-700" src="twitter.png"
+                        alt=""></a>
+
+                <a href="https://www.instagram.com/_nickhilist/profilecard/?igsh=bDA3cjNnajlsbmpo" target="_blank"><img class="h-10 hover:scale-125 transition-transform duration-700" src="instagram.png"
+                        alt=""></a>
+
+                <a href="#"><img class="h-10 hover:scale-125 transition-transform duration-700" src="facebook.png"
+                        alt=""></a>
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="./autotyping.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

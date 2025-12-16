@@ -7,11 +7,40 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+<style>
+  .reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease;
+  }
+
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+<style>
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+  }
+
+  .floating {
+    animation: float 4s ease-in-out infinite;
+  }
+</style>
+
     <title>Nikhil Portfolio</title>
     <link rel="icon" type="image/x-icon" href="logo.png">
 </head>
 
-<body class="font-nunito">
+<body class="font-nunito reveal">
     <!-- intro -->
     <div
         class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden">
@@ -95,7 +124,8 @@
         <!-- text -->
         <div
             class="hidden lg:flex flex-col gap-5 rounded-md absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900  p-6 shadow-lg shadow-fuchsia-200 h-fit w-1/3">
-            <h1 class="text-4xl font-bold text-indigo-900">Hii,I'm Nikhil Dubey</h1>
+            <h1 class="text-4xl font-bold bg-gradient-to-r from-indigo-500 via-pink-500 to-purple-500 
+bg-clip-text text-transparent animate-pulse">Hii,I'm Nikhil Dubey</h1>
             <p class="text-gray-400">A passionate full-stack web developer & Designer with a strong background in
                 building responsive and scalable web applications.
             </p>
